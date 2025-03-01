@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Vision Arm</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: "Orbitron", serif;
+            font-size: 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 50px;
+            padding: 50px;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 32px;
+            width: 320px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .content {
+            max-width: 600px;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px; /* Reduced margin to move buttons up */
+    }
+
+        .add-to-cart, .add-to-buy {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 16px;
+        }
+
+        .add-to-buy {
+            background-color: #ffd700;
+            color: black;
+        }
+
+        .add-to-buy:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        .add-to-cart:hover {
+            background-color: #ffd700;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ROBO-MANIA</h1>
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="cart.html" class="active">Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="product-container">
+    <div class="product">
+        <a href="details.html">
+            <img src="Rover.webp" alt="AI Vision Arm">
+        </a>
+        <h2>AI Vision Arm</h2>
+        <h4>Enables AI, and its subset machine learning (ML), on 85 percent of the world's mobile devices, and millions of IoT devices.</h4>
+    </div>
+    <div class="content">
+        <h2>AI Vision Arm</h2>
+        <p>
+            AI Vision Arm is a powerful, flexible, and scalable solution for AI and ML workloads. It is a high-performance, 
+            energy-efficient microprocessor that delivers industry-leading ML inferencing performance. It is designed to 
+            enable AI, and its subset machine learning (ML), on 85 percent of the world's mobile devices, and millions of IoT devices.
+        </p>
+    </div>
+</div>
+
+<div class="buttons">
+    <a href="cart.html"><button class="add-to-cart">Add to Cart</button></a>
+    <a href="checkout.html"><button class="add-to-buy">Buy Now</button></a>
+</div>
+
+<footer>
+    <p>&copy; 2025 ROBO-MANIA. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

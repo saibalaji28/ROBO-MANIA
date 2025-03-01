@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
-    min-height: calc(100vh - 150px); /* Adjust height to prevent footer overlap */
+    min-height: calc(100vh - 150px); 
   }
   
   .billing-form {
@@ -90,6 +90,6 @@ body {
     padding: 1rem 0;
     background-color: #333;
     color: #ffd700;
-    position: static; /* Change to static to avoid overlap */
+    position: static; 
   }
   
