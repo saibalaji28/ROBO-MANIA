@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #light {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: #870723;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            box-shadow: 10px 20px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        #light:hover {
+            background-color: #45a049;
+        }
+
+        #clock {
+            top: 35px;
+            left: 15px;
+            background-color: #333;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 14px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: #121212 solid 4px;
+            border-radius: 20px;
+            box-shadow: 20px 30px 0px rgba(235, 165, 165, 0.4);
+            text-align: center;
+        }
+
+        h1 {
+            color: #4caf50;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            color: blue;
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #121212;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        button[type="submit"] {
+            background-color: #870723;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 12px;
+            margin-top: -10px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div id="clock">00:00:00</div>
+    <b>
+        <div style="border: #f7b6b6 dotted 5px;">
+        <h4><u>LOGIN CREDENTIALS</u></h4>
+        <p>Username : sai balaji</p>
+        <p>Password : balaji123</p>
+        </div>
+    </b>
+    <button onclick="toggleMode()" id="light">Theme</button>
+
+    <div class="login-container">
+        <h1>Login Form</h1>
+        <form action="" onsubmit="return validate()">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required autofocus>
+                <div id="usernameError" class="error-message"></div>
+                <p id="para"></p>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <div id="passwordError" class="error-message"></div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="project.js"></script>
+</body>
+
+</html>
